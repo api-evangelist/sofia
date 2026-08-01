@@ -1,8 +1,28 @@
 aid: sofia
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sofia.png
 name: Sofia
-description: 'Sofia is a company surfaced as a portfolio company of ribbit-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: insurtech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Sofía is a 100% Mexican digital health insurance company that modernizes
+  traditional medical coverage for enterprises, individuals, and families. Its
+  plans combine zero-deductible major and minor medical care, preventive care
+  with an assigned primary-care physician, and unlimited no-cost video
+  consultations, all managed through a mobile app and an HR administrative
+  portal. Sofía operates its own integrated medical network (SofíaMed) of
+  hospitals and specialists, offers add-ons such as maternity, mental health,
+  dental, and international coverage, and reimburses claims in an average of five
+  business days. Backed by Ribbit Capital, Sofía positions insurance as a
+  digital-first, member-centric health experience rather than a paper policy.
 url: https://raw.githubusercontent.com/api-evangelist/sofia/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +32,43 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Insurtech
+- Insurance
+- Health Insurance
+- Healthcare
+- Digital Health
+- Mexico
+- Consumer
 apis: []
+common:
+- type: DomainSecurity
+  url: security/sofia-domain-security.yml
+- type: Website
+  url: https://www.sofiasalud.com/
+- type: Pricing
+  url: https://cotiza.sofiasalud.com/
+- type: SignUp
+  url: https://cotiza.sofiasalud.com/
+- type: Support
+  url: https://www.sofiasalud.com/otros/preguntas-frecuentes-sofia
+- type: Blog
+  url: https://www.sofiasalud.com/blog
+- type: TermsOfService
+  url: https://www.sofiasalud.com/otros/terminos-y-condiciones
+- type: PrivacyPolicy
+  url: https://www.sofiasalud.com/otros/aviso-de-privacidad
+- type: LinkedIn
+  url: https://www.linkedin.com/company/somossofia/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
